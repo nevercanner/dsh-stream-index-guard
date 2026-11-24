@@ -1,0 +1,28 @@
+{
+  "name": "@dsh-external/dsh-stream-index-guard",
+  "version": "0.1.0",
+  "description": "拦截流式数据，把非法 index 修正为合法值，避免 reasoning-delta index 报错导致整轮失败",
+  "private": true,
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/types/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "license": "BSD-3-Clause",
+  "peerDependencies": {
+    "@deepseek-ai/dsh-llm": ">=0.0.1-rc <2",
+    "@deepseek-ai/dsh-tools": ">=0.0.1-rc <2",
+    "cordis": ">=4.0.0-rc <5",
+    "@deepseek-ai/schemastery": "^3.18.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "typescript": "^5.9.0"
+  },
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "verify": "node scripts/verify.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}

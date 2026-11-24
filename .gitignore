@@ -1,0 +1,14 @@
+# 依赖（本机是 junction 指向宿主 node_modules，不能入库）
+node_modules/
+
+# 本地备份
+.backup/
+*.bak
+*.bak-*
+
+# 日志
+*.log
+
+# 系统
+.DS_Store
+Thumbs.db
